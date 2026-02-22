@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.active {
+  display: block;
+}
+
+.titulo {
+  font-size: 40px;
+  animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff9800;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.personajes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.personaje {
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.personaje:hover {
+  transform: scale(1.3);
+}
+
+.habitacion {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.objeto {
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.objeto:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.1);
+}
