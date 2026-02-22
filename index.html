@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Mundo Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1️⃣ PANTALLA BIENVENIDA -->
+  <section id="welcome" class="screen active">
+    <h1 class="titulo">✨ BIENVENIDO A TU MUNDO VIRTUAL ✨</h1>
+    <button onclick="irAPersonajes()" class="btn">Entrar</button>
+  </section>
+
+  <!-- 2️⃣ SELECCIÓN DE PERSONAJE -->
+  <section id="characters" class="screen">
+    <h2>Elige tu personaje 👤</h2>
+
+    <div class="personajes">
+      <div class="personaje" onclick="seleccionarPersonaje('🧑‍💻')">🧑‍💻</div>
+      <div class="personaje" onclick="seleccionarPersonaje('🧙')">🧙</div>
+      <div class="personaje" onclick="seleccionarPersonaje('🧑‍🚀')">🧑‍🚀</div>
+      <div class="personaje" onclick="seleccionarPersonaje('🧑‍🎤')">🧑‍🎤</div>
+    </div>
+  </section>
+
+  <!-- 3️⃣ HABITACIÓN -->
+  <section id="room" class="screen">
+    <h2 id="saludo"></h2>
+
+    <div class="habitacion">
+      <div class="objeto" onclick="mostrar('musica')">🎵 Música</div>
+      <div class="objeto" onclick="mostrar('peliculas')">🎬 Películas</div>
+      <div class="objeto" onclick="mostrar('juegos')">🎮 Juegos</div>
+    </div>
+
+    <div id="contenido"></div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
